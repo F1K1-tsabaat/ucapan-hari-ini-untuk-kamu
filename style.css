@@ -1,0 +1,54 @@
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 600px;
+}
+
+h1 {
+  color: #d6336c;
+}
+
+.pesan {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #d6336c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #ad2958;
+}
+
+#ucapan {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #222;
+}
+
+.ucapan-hidden {
+  display: none;
+}
