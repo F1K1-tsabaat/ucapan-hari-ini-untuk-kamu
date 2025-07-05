@@ -1,6 +1,6 @@
 function tampilkanUcapan() {
   const ucapan = document.getElementById("ucapan");
-  ucapan.textContent = "Aku bersyukur setiap hari karena kamu ada. Selamat ulang tahun, cintaku ❤️";
+  ucapan.textContent = "Aku bersyukur setiap hari karena kamu ada. wahai yang sayaangg, cintaku ❤️";
   ucapan.classList.remove("ucapan-hidden");
 
   // Mainkan musik
