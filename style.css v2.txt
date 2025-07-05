@@ -1,0 +1,106 @@
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 600px;
+  z-index: 1;
+}
+
+h1 {
+  color: #d6336c;
+}
+
+.pesan {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #d6336c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #ad2958;
+}
+
+#ucapan {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #222;
+}
+
+.ucapan-hidden {
+  display: none;
+}
+
+/* Popup surat cinta */
+#popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.popup-hidden {
+  display: none;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  animation: popup-muncul 0.5s ease;
+}
+
+@keyframes popup-muncul {
+  from { transform: scale(0.8); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* Confetti */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: hsl(0, 100%, 70%);
+  top: -10px;
+  border-radius: 50%;
+  animation: jatuh linear forwards;
+  z-index: 0;
+}
+
+@keyframes jatuh {
+  to {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}

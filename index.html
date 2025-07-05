@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selamat Ulang Tahun, Sayang ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎂 Selamat Ulang Tahun, Cintaku! ❤️</h1>
+    <p class="pesan">Terima kasih sudah menjadi bagian terbaik dalam hidupku 💖</p>
+    <button onclick="tampilkanUcapan()">Klik untuk Pesan Romantis</button>
+    <p id="ucapan" class="ucapan-hidden"></p>
+  </div>
+
+  <!-- Popup Surat Cinta -->
+  <div id="popup" class="popup-hidden">
+    <div class="popup-content">
+      <h2>💌 Untukmu, Sayang</h2>
+      <p>
+        Di hari istimewamu ini, aku ingin kamu tahu betapa berharganya kamu dalam hidupku.  
+        Setiap senyum, tawa, dan pelukanmu adalah kebahagiaan yang tak tergantikan.  
+        Terima kasih telah menjadi cahaya dalam hidupku.  
+        Aku mencintaimu, hari ini, esok, dan selamanya ❤️
+      </p>
+      <button onclick="tutupPopup()">Tutup</button>
+    </div>
+  </div>
+
+  <!-- Musik -->
+  <audio id="musik" src="happy-birthday.mp3" preload="auto"></audio>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
